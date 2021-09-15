@@ -5,7 +5,7 @@ license          'Apache 2.0'
 description      'Installs/Configures Wazuh with chef cookbooks'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '4.0.4'
-chef_version     '>= 15.0'
+chef_version     '>= 12'
 
 %w(redhat centos oracle).each do |el|
   supports el, '>= 6.0'
