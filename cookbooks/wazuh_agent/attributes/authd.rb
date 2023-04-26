@@ -18,7 +18,7 @@
 #
 
 default['ossec']['agent_auth']['register'] = 'no'
-default['ossec']['agent_auth']['name'] = node['hostname']
+default['ossec']['agent_auth']['name'] = node['fqdn']
 default['ossec']['agent_auth']['host'] = node['ossec']['address']
 default['ossec']['agent_auth']['port'] = 1515
 default['ossec']['agent_auth']['ca'] = nil
