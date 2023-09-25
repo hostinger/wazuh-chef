@@ -109,11 +109,10 @@ template "#{node['ossec']['dir']}/etc/local_internal_options.conf" do
   source 'var/ossec/etc/agent_local_internal_options.conf'
   owner 'root'
   group 'wazuh'
-  action :create
 end
 
 service 'wazuh' do
   service_name 'wazuh-agent'
   supports status: true, restart: true
-  action [:enable, :restart]
+  action %i(enable start)
 end
