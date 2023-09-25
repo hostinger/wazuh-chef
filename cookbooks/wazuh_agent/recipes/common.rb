@@ -41,5 +41,4 @@ file "#{node['ossec']['dir']}/etc/shared/agent.conf" do
   group 'wazuh'
   mode '0440'
   notifies :restart, 'service[wazuh]'
-  action :create
 end
